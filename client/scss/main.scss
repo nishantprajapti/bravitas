@@ -1,0 +1,93 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.camera,.menuitem {background: url("/images/sprite.png")}
+body { 
+    margin: 0;     font-family: arial;
+    .page {height: 50px;padding: 0 10px;
+        float:left;width:100%;background-color:red;
+        header {
+            .logo {float:left; background: url("/images/iphone-logo.png") no-repeat;height: 50px;width:100px;
+            background-size:contain;}
+            input {float: left;margin:10px 0 0 10px;background: transparent;border:none;
+             box-shadow:inset 2px 0px 14px -2px;height: 20px;padding: 5px;width:130px;}
+            .headerbanner {display: block;font-weight: 700;text-align: center;margin-right: 230px; 
+            line-height:50px;  text-transform: uppercase}
+            .right-menu-items{ float:right;width:120px;
+                .camera{
+                    height: 24px;
+                width: 30px;
+                background-position: 0px 47px;
+                    float: left;
+                margin-top: 12px;
+                }
+                .menuitem{    float: right;
+                height: 40px;
+                width: 15px;
+                background-position: 15px 10px;
+                }
+                }
+            .menu {width:auto;text-transform: capitalize;color:white;display: none;
+                background: red;padding:10px;position: absolute;right:0;
+                li {
+                   cursor:pointer;                      
+                 ul {
+                    display: none
+                }
+                }
+            }
+            
+        }
+
+    }
+}
+.visible{display: block !important}
+.hide {display: none !important ;}
+
